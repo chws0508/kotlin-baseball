@@ -13,4 +13,11 @@ class InputView {
         inputValidation.checkUserNumberInputIsNaturalNumber(input)
         return converter.stringToIntList(input)
     }
+
+    fun getRetryNumber(): Int{
+        var input = Console.readLine()
+        inputValidation.checkRetryInputNumber(input)
+        inputValidation.checkRetryInputLength(input)
+        return input.toInt()
+    }
 }
