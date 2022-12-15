@@ -18,6 +18,10 @@ class BaseballGame {
         return ballCount - strikeCount
     }
 
+    fun isGameFinish(strikeCount:Int):Boolean{
+        if(strikeCount == GAME_END_STRIKE_COUNT ) return true
+        return false
+    }
 
     companion object{
         const val NUMBER_DIGITS = 3
