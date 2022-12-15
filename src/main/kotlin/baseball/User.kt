@@ -1,3 +1,3 @@
 package baseball
 
-data class User(val number:List<Int>)
+data class User(var number:List<Int>)

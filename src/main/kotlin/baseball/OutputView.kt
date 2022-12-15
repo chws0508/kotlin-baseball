@@ -15,7 +15,13 @@ class OutputView {
         println()
     }
 
-    fun printGameResult() {
+    fun printGameResult(strike: Int,ball: Int){
+        if(strike==0 && ball == 0) print("낫싱")
+        printBall(ball)
+        printStrike(strike)
+    }
+
+    fun printGameEnd() {
         println(GAME_END)
     }
 
