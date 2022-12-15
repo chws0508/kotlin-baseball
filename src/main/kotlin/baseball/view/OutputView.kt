@@ -1,4 +1,4 @@
-package baseball
+package baseball.view
 
 class OutputView {
 
@@ -7,11 +7,11 @@ class OutputView {
     }
 
     fun printBall(ball: Int) {
-        if (ball != 0) print("${ball}${BALL} ")
+        if (ball != 0) print("${ball}$BALL ")
     }
 
     fun printStrike(strike: Int) {
-        if (strike != 0) print("${strike}${STRIKE}")
+        if (strike != 0) print("${strike}$STRIKE")
         println()
     }
 

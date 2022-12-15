@@ -1,4 +1,12 @@
-package baseball
+package baseball.controller
+
+import baseball.*
+import baseball.domain.BaseballGame
+import baseball.domain.Computer
+import baseball.domain.GameResult
+import baseball.domain.User
+import baseball.view.InputView
+import baseball.view.OutputView
 
 class Controller {
 

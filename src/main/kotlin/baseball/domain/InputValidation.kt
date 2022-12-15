@@ -1,8 +1,8 @@
-package baseball
+package baseball.domain
 
 class InputValidation {
     fun checkUserNumberInputLength(input:String){
-        if(input.length>USER_NUMBER_OF_DIGITS) throw IllegalArgumentException(USER_NUMBER_LENGTH_ERROR_MESSAGE)
+        if(input.length> USER_NUMBER_OF_DIGITS) throw IllegalArgumentException(USER_NUMBER_LENGTH_ERROR_MESSAGE)
     }
 
     fun checkUserNumberInputIsNaturalNumber(input: String){
@@ -12,11 +12,13 @@ class InputValidation {
     }
 
     fun checkRetryInputLength(input:String){
-        if(input.length>RETRY_INPUT_LENGTH) throw IllegalArgumentException(RETRY_INPUT_LENGTH_ERROR_MESSAGE)
+        if(input.length> RETRY_INPUT_LENGTH) throw IllegalArgumentException(RETRY_INPUT_LENGTH_ERROR_MESSAGE)
     }
 
     fun checkRetryInputNumber(input: String){
-        if(!(input!= RETRY_NUMBER||input!= QUIT_NUMBER)) throw IllegalArgumentException(INVALID_RETRY_INPUT_ERROR_MESSAGE)
+        if(!(input!= RETRY_NUMBER ||input!= QUIT_NUMBER)) throw IllegalArgumentException(
+            INVALID_RETRY_INPUT_ERROR_MESSAGE
+        )
     }
 
     companion object{
