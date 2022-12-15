@@ -10,6 +10,13 @@ class BaseballGame {
         return strikeCount
     }
 
+    fun getBallCount(computer:List<Int>,user:List<Int>,strikeCount:Int):Int{
+        var ballCount = 0
+        user.forEach {number->
+            if(computer.contains(number)) ballCount++
+        }
+        return ballCount - strikeCount
+    }
 
 
     companion object{
